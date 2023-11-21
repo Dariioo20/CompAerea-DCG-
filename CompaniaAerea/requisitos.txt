@@ -16,3 +16,22 @@ Por último, para cada vuelo, se almacena la lista completa de
 pasajeros, con su DNI, el nombre, apellidos, el/los teléfonos de
 contacto, el email, así como el asiento que ocupa y su clase (turista,
 primera o business).”
+
+
+
+La base de datos tendrá como como “conjunto de caracteres”
+utf8mb4 y utf8mb4_unicode_ci como “colación”.
+Se desea que la información sobre la capacidad del avión sea un
+campo numérico sin signo y con valor máximo de 450
+Se desea que la información sobre la autonomía de vuelo sean
+un campo numérico sin signo, con un valor máximo de 48 horas.
+Además, se desea el campo autonomía de vuelo que sea opcional.
+De los trabajadores se desea conocer los apellidos, siendo el segundo
+de ellos opcional.
+Se validará que el campo asociado al asiento que ocupa el pasajero
+sea mayor que 0 (usando la restricción CHECK).
+Del tipo de la clase del asiento que ocupa el pasajero (turista, primera
+o business), se quiere almacenar información del identificador del
+Tipo; este identificador será un campo numérico autoincremental.
+Se cambiará el nombre de la tabla asociada a la entidad AVION al
+nombre T_AEROPLANO.
